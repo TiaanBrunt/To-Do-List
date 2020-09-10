@@ -1,0 +1,18 @@
+html{
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC 100%);
+
+}
+
+h1, div{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.to-do-list{
+    background: white;
+}
