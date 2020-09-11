@@ -1,18 +1,129 @@
-html{
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
     background: linear-gradient(90deg, #CCFFFF, #FFCCCC 100%);
+    color:white;
+    min-height: 100vh;
 
 }
 
-h1, div{
-    display:flex;
-    justify-content: center;
-    align-content: center;
+h1{
+    font-size:3rem;
+    color:black;
 }
 
-ul{
+h1, form{
+  min-height: 20vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+form input, button{
+    padding: 0.5rem;
+    font-size:2em;
+    border:none;
+    background:white;
+}
+
+form button{
+    color: black;
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC 100%);
+}
+
+form button:hover{
+    background:black;
+    color:white;
+}
+
+
+.to-do-list{
+    margin: auto;
+    min-width:30%;
+    max-width: 50%;
     list-style-type: none;
 }
 
-.to-do-list{
-    background: white;
+
+
+.removeBut{
+    background-color: red;
+    border: none;
+    color:white;
+    padding: 1rem; 
+    font-size: 1rem;
+    cursor: pointer; 
+  
 }
+
+.removeBut:hover{
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC 100%);
+    color:red;
+}
+.completeBut{
+    background-color: green;
+    border: none;
+    color:white;
+    padding: 1rem; 
+    font-size: 1rem;
+    cursor: pointer; 
+  
+}
+
+.completeBut:hover{
+    background: linear-gradient(90deg, #CCFFFF, #FFCCCC 100%);
+    color:green;
+}
+
+.todo{
+    margin:0.5rem;
+    background:white;
+    color:black;
+    font-size:1.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.todo:hover{
+    transform:scale(1.1);
+    z-index: 100;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+.todo li{
+    flex: 1;
+}
+
+.formContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.deleteTrans{
+    transition: 1s ease-in;
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.deleteTrans:hover{
+    transform: none;
+    z-index: 0;
+    box-shadow: none;
+}
+
