@@ -13,6 +13,7 @@ toDoList.addEventListener('click', deleteTask);
 function addChore(event){
     event.preventDefault();
     //console.log("test");
+    if(userInput.value.length != 0){
     let toDoDiv = document.createElement("div");
     toDoDiv.classList.add("todo");
 
@@ -38,6 +39,7 @@ function addChore(event){
     toDoList.appendChild(toDoDiv);
 
     userInput.value = "";
+    }
 }
 
 function deleteTask(e){
